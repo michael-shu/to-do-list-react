@@ -1,0 +1,117 @@
+
+.container {
+    text-align: center;
+    background-color: lightskyblue;
+    border-radius: 25px;
+  }
+  
+  ol li {
+    background: white;
+    transition: 0.2s;
+  
+    text-align: left;
+  
+    overflow-wrap: break-word;
+  
+    /* make the list items unselectable */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  ul li {
+    background: white;
+    transition: 0.2s;
+  
+    text-align: left;
+  
+    overflow-wrap: break-word;
+  
+    /* make the list items unselectable */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  .checked {
+    background: #05445E;
+    color: rgba(255, 255, 255, 0.242);
+    text-decoration: line-through;
+  }
+  
+  /*Before the button is selected, just sitting there so the task isn't done*/
+  .toggleCompleted {
+    background: skyblue;
+    outline: none;
+    border: none;
+    transition: all 500ms ease;
+    float: right;
+    border-radius: 50%;
+  }
+  
+  .dropdown-menu {
+    top: 100%;
+    /* Bottom of button */
+    right: 0;
+  }
+  
+  .btn-success {
+    outline: auto;
+  }
+  
+  
+  /*Now the button has been clicked, the task is done*/
+  .btnDone {
+    background: #030352ce;
+    transition: 300ms ease-in-out;
+  }
+  
+  @media (min-width:300px) {
+    .toggleCompleted {
+      width: 25px;
+      height: 25px;
+    }
+  
+    ol li {
+      padding: 5px;
+    }
+  
+    ul {
+      margin: 15px;
+    }
+  
+    ul li {
+      padding: 5px;
+    }
+  }
+  
+  @media(min-width:768px) {
+  
+    ol {
+      margin: 15px;
+    }
+  
+    ol li {
+      padding: 20px;
+      font-size: larger;
+    }
+  
+    ul li {
+      padding: 20px;
+      font-size: larger;
+    }
+  
+    .toggleCompleted {
+      width: 30px;
+      height: 30px;
+    }
+  }
+  
+  @media(min-width:992px) {
+    .toggleCompleted {
+      width: 40px;
+      height: 40px;
+    }
+  }
